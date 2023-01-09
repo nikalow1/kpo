@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kpo.ControllerAdmIntData">
+    <children>
+        <AnchorPane layoutY="153.0" prefHeight="547.0" prefWidth="1000.0" style="-fx-background-color: #F5FFFA;">
+            <children>
+                <SplitPane prefHeight="547.0" prefWidth="1000.0">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                            <children>
+                                <Button fx:id="editData" layoutX="61.0" layoutY="435.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="179.0" text="Редактировать" textFill="#1e1b1b">
+                                    <font>
+                                        <Font name="Arial Black" size="18.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="addData" layoutX="260.0" layoutY="435.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="179.0" text="Добавить" textFill="#1e1b1b">
+                                    <font>
+                                        <Font name="Arial Black" size="18.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="back2" layoutX="463.0" layoutY="486.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="179.0" text="Назад" textFill="#1e1b1b">
+                                    <font>
+                                        <Font name="Arial Black" size="18.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="delData" layoutX="463.0" layoutY="435.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="179.0" text="Удалить" textFill="#1e1b1b">
+                                    <font>
+                                        <Font name="Arial Black" size="18.0" />
+                                    </font>
+                                </Button>
+                        <Button fx:id="outstandOrderAdm" layoutX="61.0" layoutY="486.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="179.0" text="В работе" textFill="#1e1b1b">
+                           <font>
+                              <Font name="Arial Black" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="profitAdm" layoutX="260.0" layoutY="486.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="179.0" text="Доход" textFill="#1e1b1b">
+                           <font>
+                              <Font name="Arial Black" size="18.0" />
+                           </font>
+                        </Button>
+                        <TableView fx:id="dataTable" prefHeight="408.0" prefWidth="998.0">
+                           <columns>
+                              <TableColumn fx:id="idCol" prefWidth="47.0" text="ID" />
+                              <TableColumn fx:id="nameCol" prefWidth="154.0" text="Наименование" />
+                              <TableColumn fx:id="brandCol" prefWidth="135.0" text="Марка" />
+                              <TableColumn fx:id="fioCol" prefWidth="140.0" text="ФИО Владельца" />
+                              <TableColumn fx:id="phoneNumCol" prefWidth="155.0" text="Номер телефона" />
+                              <TableColumn fx:id="countCol" prefWidth="124.0" text="Стоимость ремонта" />
+                              <TableColumn fx:id="dateOfAdmissionCol" prefWidth="91.0" text="Дата приема" />
+                              <TableColumn fx:id="dateOfIssueCol" prefWidth="83.0" text="Дата выдачи" />
+                              <TableColumn fx:id="statusCol" prefWidth="68.0" text="Статус" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="refreshData" layoutX="664.0" layoutY="435.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="179.0" text="Обновить" textFill="#1e1b1b">
+                           <font>
+                              <Font name="Arial Black" size="18.0" />
+                           </font>
+                        </Button>
+                            </children>
+                        </AnchorPane>
+                    </items>
+                </SplitPane>
+            </children>
+        </AnchorPane>
+        <Label layoutX="176.0" layoutY="41.0" prefHeight="76.0" prefWidth="695.0" text="МЕНЮ АДМИНИСТРАТОРА" textFill="WHITE">
+            <font>
+                <Font name="Arial Black" size="46.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
